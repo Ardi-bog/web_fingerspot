@@ -1,0 +1,492 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- mycss-->
+    <link rel="stylesheet" href="style.css">
+    <style type="text/css">
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    </style>
+
+    
+    <title>Vapor Hitz</title>
+
+  </head>
+  <body>
+     
+    <script type="text/javascript">
+      $(document).ready(function() {
+            $('#list').click(function(event){event.preventDefault();$('#products .item').addClass('list-group-item');});
+            $('#grid').click(function(event){event.preventDefault();$('#products .item').removeClass('list-group-item');$('#products .item').addClass('grid-group-item');});
+        });
+    </script>
+    <style type="">
+      .view-group {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    padding-left: 0;
+    margin-bottom: 0;
+}
+.thumbnail
+{
+    margin-bottom: 30px;
+    padding: 0px;
+    -webkit-border-radius: 0px;
+    -moz-border-radius: 0px;
+    border-radius: 0px;
+}
+
+.item.list-group-item
+{
+    float: none;
+    width: 100%;
+    background-color: #fff;
+    margin-bottom: 30px;
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%;
+    max-width: 100%;
+    padding: 0 1rem;
+    border: 0;
+}
+.item.list-group-item .img-event {
+    float: left;
+    width: 30%;
+}
+
+.item.list-group-item .list-group-image
+{
+    margin-right: 10px;
+}
+.item.list-group-item .thumbnail
+{
+    margin-bottom: 0px;
+    display: inline-block;
+}
+.item.list-group-item .caption
+{
+    float: left;
+    width: 70%;
+    margin: 0;
+}
+
+.item.list-group-item:before, .item.list-group-item:after
+{
+    display: table;
+    content: " ";
+}
+
+.item.list-group-item:after
+{
+    clear: both;
+}
+/* Footer */
+@import url('https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
+section {
+    padding: 60px 0;
+}
+
+section .section-title {
+    text-align: center;
+    color: #007bff;
+    margin-bottom: 50px;
+    text-transform: uppercase;
+}
+#footer {
+    background: #007bff !important;
+}
+#footer h5{
+  padding-left: 10px;
+    border-left: 3px solid #eeeeee;
+    padding-bottom: 6px;
+    margin-bottom: 20px;
+    color:#ffffff;
+}
+#footer a {
+    color: #ffffff;
+    text-decoration: none !important;
+    background-color: transparent;
+    -webkit-text-decoration-skip: objects;
+}
+#footer ul.social li{
+  padding: 3px 0;
+}
+#footer ul.social li a i {
+    margin-right: 5px;
+  font-size:25px;
+  -webkit-transition: .5s all ease;
+  -moz-transition: .5s all ease;
+  transition: .5s all ease;
+}
+#footer ul.social li:hover a i {
+  font-size:30px;
+  margin-top:-10px;
+}
+#footer ul.social li a,
+#footer ul.quick-links li a{
+  color:#ffffff;
+}
+#footer ul.social li a:hover{
+  color:#eeeeee;
+}
+#footer ul.quick-links li{
+  padding: 3px 0;
+  -webkit-transition: .5s all ease;
+  -moz-transition: .5s all ease;
+  transition: .5s all ease;
+}
+#footer ul.quick-links li:hover{
+  padding: 3px 0;
+  margin-left:5px;
+  font-weight:700;
+}
+#footer ul.quick-links li a i{
+  margin-right: 5px;
+}
+#footer ul.quick-links li:hover a i {
+    font-weight: 700;
+}
+
+@media (max-width:767px){
+  #footer h5 {
+    padding-left: 0;
+    border-left: transparent;
+    padding-bottom: 0px;
+    margin-bottom: 10px;
+}
+}
+
+    </style>
+    <!--navbar-->
+    <nav class="navbar navbar-expand-lg navbar-light ">
+        <div class="container">
+        <a class="navbar-brand" href="#">Fingerspot</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon .navbar-light">   
+         <!-- <i class="fa fa-navicon" style="color:#fff; font-size:28px;"></i> -->
+        </span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav ml-auto">
+            <a class="nav-item nav-link " href="#">Home <span class="sr-only">(current)</span></a>
+            <a class="nav-item nav-link" href="#judulkonten">Deskripsi</a>
+            <a class="nav-item nav-link" href="#produk">Promo</a>
+            <a class="nav-item nav-link " href="#order">Order</a>
+            <a class="nav-item nav-link " href="login/login.php">Login</a>
+          </div>
+        </div>
+    </div>
+      </nav>
+
+    <!--end navbar-->
+
+    
+    <!--Jumbotron-->
+    <div class="jumbotron jumbotron-fluid">
+            <div class="container">
+              <h1 class="display-4">Get work done <b>faster</b> and <b>better</b> with us</h1>
+              <a href="#produk" class="btn btn-primary tombol"><i>Get Now</i> </a>
+            </div>
+     </div>
+    <!--End Jumbotron-->
+  
+    <!--container-->
+    <div class="container">
+       <div class="row justify-content-center">
+          <div class="col-10 kotak">
+            <div class="row ">
+              <div class="col-lg">
+                <img src="img/features_1.png "class="float-left"style="height: 150px;">
+                <h4><b><i> Customer Service</i></b></h4>
+                <p>Layanan tim support yang selalu cepat dan tanggap menagani keluhan anda.</p>
+              </div>
+              <div class="col-lg">
+                <img src="img/features_6.png"class="float-left" style="height: 150px;">
+                <h4><b><i>Fitur Produk Lengkap</i></b></h4>
+                <p>Produk Fingerspot baik software atau hardware menawarkan berbagai fitur terbaru.</p>
+              </div>
+              <div class="col-lg">
+                <img src="img/features_2.png"class="float-left" style="height: 150px;">
+                <h4><b><i>Kelola Data Absen</i></b></h4>
+                <p>HRD dapat memproses laporan absensi kantor lebih mudah, cepat, dan akurat.</p>
+              </div>
+           </div>
+            
+          </div>
+        </div>
+        
+         
+   
+    
+    <!--Deskripsi-->
+    
+    </div>
+    <div id="judulkonten">
+        <hr style="border-radius:10px;background:#84817a;height: 2px; margin-top: 100;"><h1><b><i>Manajemen Absensi Segala Bidang<i></b></h1><hr>
+          <p>Fingerspot berkomitmen memasyarakatkan teknologi pengenalan sidik jari menjadi suatu solusi yang murah, produktif, dan efisien. Berlandaskan komitmen tersebut, Fingerspot menawarkan berbagai varian produk yang mampu memenuhi kebutuhan sistem absensi di seluruh bidang mulai dari mesin absensi dengan identifikasi sidik jari dan wajah, serta software absensi dan penggajian karyawan.</p>
+          <p>Integrasi mesin dan software Fingerspot sangat baik, sehingga mampu menghasilkan sistem yang komprehensif, solutif dan efektif dalam pengolahan laporan absensi, baik untuk perusahaan maupun sekolah.</p>
+          <img src="img/Close-Icon-Grey.png">
+     </div>
+          <!--Akhir deskripsi -->
+        <section id="banner">
+          <div class="container">
+            <div class="row">
+              <div class="col-10-lg konten">
+              <div class="col-lg">
+                <div class="kumis">
+                <img src="img/_Bearded_Man-17-512.png"class="float-left">            
+                <h5>Fingerspot Semarang</h5>
+                <p>Mesin absensi Fingerspot mampu membantu menangani masalah absensi dan kebutuhan personalia serta penggajian, baik perusahaan maupun sekolah. Mesin absensi ini tidak hanya mampu mengenali sidik jari sebagai metode verifikasi, Anda dapat menggunakan password, kartu RFID, dan juga template wajah. Selain berkapasitas besar, mesin absensi Fingerspot telah dilengkapi dan komplit dengan berbagai fitur, seperti SSR (Self Service Reader), SSQ (Self Service Query), fungsi akses kontrol, multikoneksi, scheduled bell, internal backup battery, dan USB Data Encryption. Dengan demikian, manajemen absensi Anda lebih aman, praktis, dan terhindar dari manipulasi data.</p>
+              </div>
+              </div>
+              </div>
+            </div>
+            </div>
+          </div>
+          
+          <img src="img/wave.png"class="bottom-img">
+        </section>
+        
+        <!--List Produk-->
+
+<!------ Include the above in your HEAD tag ---------->
+
+<div class="container">
+    <div class="row">
+        <div class="col-lg-12 my-3">
+            <div class="pull-right">
+                <div class="btn-group">
+                    <button class="btn btn-info" id="list">
+                        List View
+                    </button>
+                    <button class="btn btn-danger" id="grid">
+                        Grid View
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div> 
+    <div id="products" class="row view-group">
+                <div class="item col-xs-4 col-lg-4">
+                    <div class="thumbnail card">
+                        <div class="img-event">
+                            <img class="group list-group-image img-fluid" src="http://placehold.it/400x250/000/fff" alt="" />
+                        </div>
+                        <div class="caption card-body">
+                            <h4 class="group card-title inner list-group-item-heading">
+                                Product title</h4>
+                            <p class="group inner list-group-item-text">
+                                Product description... Lorem ipsum dolor sit amet, consectetuer adipiscing elit,
+                                sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+                            <div class="row">
+                                <div class="col-xs-12 col-md-6">
+                                    <p class="lead">
+                                        $21.000</p>
+                                </div>
+                                <div class="col-xs-12 col-md-6">
+                                    <a class="btn btn-primary" href="http://www.jquery2dotnet.com">Add to cart</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="item col-xs-4 col-lg-4">
+                    <div class="thumbnail card">
+                        <div class="img-event">
+                            <img class="group list-group-image img-fluid" src="http://placehold.it/400x250/000/fff" alt="" />
+                        </div>
+                        <div class="caption card-body">
+                            <h4 class="group card-title inner list-group-item-heading">
+                                Product title</h4>
+                            <p class="group inner list-group-item-text">
+                                Product description... Lorem ipsum dolor sit amet, consectetuer adipiscing elit,
+                                sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+                            <div class="row">
+                                <div class="col-xs-12 col-md-6">
+                                    <p class="lead">
+                                        $21.000</p>
+                                </div>
+                                <div class="col-xs-12 col-md-6">
+                                    <a class="btn btn-primary" href="http://www.jquery2dotnet.com">Add to cart</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="item col-xs-4 col-lg-4">
+                    <div class="thumbnail card">
+                        <div class="img-event">
+                            <img class="group list-group-image img-fluid" src="http://placehold.it/400x250/000/fff" alt="" />
+                        </div>
+                        <div class="caption card-body">
+                            <h4 class="group card-title inner list-group-item-heading">
+                                Product title</h4>
+                            <p class="group inner list-group-item-text">
+                                Product description... Lorem ipsum dolor sit amet, consectetuer adipiscing elit,
+                                sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+                            <div class="row">
+                                <div class="col-xs-12 col-md-6">
+                                    <p class="lead">
+                                        $21.000</p>
+                                </div>
+                                <div class="col-xs-12 col-md-6">
+                                    <a class="btn btn-primary" href="http://www.jquery2dotnet.com">Add to cart</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="item col-xs-4 col-lg-4">
+                    <div class="thumbnail card">
+                        <div class="img-event">
+                            <img class="group list-group-image img-fluid" src="http://placehold.it/400x250/000/fff" alt="" />
+                        </div>
+                        <div class="caption card-body">
+                            <h4 class="group card-title inner list-group-item-heading">
+                                Product title</h4>
+                            <p class="group inner list-group-item-text">
+                                Product description... Lorem ipsum dolor sit amet, consectetuer adipiscing elit,
+                                sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+                            <div class="row">
+                                <div class="col-xs-12 col-md-6">
+                                    <p class="lead">
+                                        $21.000</p>
+                                </div>
+                                <div class="col-xs-12 col-md-6">
+                                    <a class="btn btn-primary" href="http://www.jquery2dotnet.com">Add to cart</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="item col-xs-4 col-lg-4">
+                    <div class="thumbnail card">
+                        <div class="img-event">
+                            <img class="group list-group-image img-fluid" src="http://placehold.it/400x250/000/fff" alt="" />
+                        </div>
+                        <div class="caption card-body">
+                            <h4 class="group card-title inner list-group-item-heading">
+                                Product title</h4>
+                            <p class="group inner list-group-item-text">
+                                Product description... Lorem ipsum dolor sit amet, consectetuer adipiscing elit,
+                                sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+                            <div class="row">
+                                <div class="col-xs-12 col-md-6">
+                                    <p class="lead">
+                                        $21.000</p>
+                                </div>
+                                <div class="col-xs-12 col-md-6">
+                                    <a class="btn btn-primary" href="http://www.jquery2dotnet.com">Add to cart</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="item col-xs-4 col-lg-4">
+                    <div class="thumbnail card">
+                        <div class="img-event">
+                            <img class="group list-group-image img-fluid" src="http://placehold.it/400x250/000/fff" alt="" />
+                        </div>
+                        <div class="caption card-body">
+                            <h4 class="group card-title inner list-group-item-heading">
+                                Product title</h4>
+                            <p class="group inner list-group-item-text">
+                                Product description... Lorem ipsum dolor sit amet, consectetuer adipiscing elit,
+                                sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+                            <div class="row">
+                                <div class="col-xs-12 col-md-6">
+                                    <p class="lead">
+                                        $21.000</p>
+                                </div>
+                                <div class="col-xs-12 col-md-6">
+                                    <a class="btn btn-primary" href="http://www.jquery2dotnet.com">Add to cart</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+</div>
+        <!--Akhir List Produk-->
+        <!-- Footer -->
+  <section id="footer">
+    <div class="container">
+      <div class="row text-center text-xs-center text-sm-left text-md-left">
+        <div class="col-xs-12 col-sm-4 col-md-4">
+          <h5>Quick links</h5>
+          <ul class="list-unstyled quick-links">
+            <li><a href="https://www.fiverr.com/share/qb8D02"><i class="fa fa-angle-double-right"></i>Home</a></li>
+            <li><a href="https://www.fiverr.com/share/qb8D02"><i class="fa fa-angle-double-right"></i>About</a></li>
+            <li><a href="https://www.fiverr.com/share/qb8D02"><i class="fa fa-angle-double-right"></i>FAQ</a></li>
+            <li><a href="https://www.fiverr.com/share/qb8D02"><i class="fa fa-angle-double-right"></i>Get Started</a></li>
+            <li><a href="https://www.fiverr.com/share/qb8D02"><i class="fa fa-angle-double-right"></i>Videos</a></li>
+          </ul>
+        </div>
+        <div class="col-xs-12 col-sm-4 col-md-4">
+          <h5>Quick links</h5>
+          <ul class="list-unstyled quick-links">
+            <li><a href="https://www.fiverr.com/share/qb8D02"><i class="fa fa-angle-double-right"></i>Home</a></li>
+            <li><a href="https://www.fiverr.com/share/qb8D02"><i class="fa fa-angle-double-right"></i>About</a></li>
+            <li><a href="https://www.fiverr.com/share/qb8D02"><i class="fa fa-angle-double-right"></i>FAQ</a></li>
+            <li><a href="https://www.fiverr.com/share/qb8D02"><i class="fa fa-angle-double-right"></i>Get Started</a></li>
+            <li><a href="https://www.fiverr.com/share/qb8D02"><i class="fa fa-angle-double-right"></i>Videos</a></li>
+          </ul>
+        </div>
+        <div class="col-xs-12 col-sm-4 col-md-4">
+          <h5>Quick links</h5>
+          <ul class="list-unstyled quick-links">
+            <li><a href="https://www.fiverr.com/share/qb8D02"><i class="fa fa-angle-double-right"></i>Home</a></li>
+            <li><a href="https://www.fiverr.com/share/qb8D02"><i class="fa fa-angle-double-right"></i>About</a></li>
+            <li><a href="https://www.fiverr.com/share/qb8D02"><i class="fa fa-angle-double-right"></i>FAQ</a></li>
+            <li><a href="https://www.fiverr.com/share/qb8D02"><i class="fa fa-angle-double-right"></i>Get Started</a></li>
+            <li><a href="https://wwwe.sunlimetech.com" title="Design and developed by"><i class="fa fa-angle-double-right"></i>Imprint</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-xs-12 col-sm-12 col-md-12 mt-2 mt-sm-5">
+          <ul class="list-unstyled list-inline social text-center">
+            <li class="list-inline-item"><a href="https://www.fiverr.com/share/qb8D02"><i class="fa fa-facebook"></i></a></li>
+            <li class="list-inline-item"><a href="https://www.fiverr.com/share/qb8D02"><i class="fa fa-twitter"></i></a></li>
+            <li class="list-inline-item"><a href="https://www.fiverr.com/share/qb8D02"><i class="fa fa-instagram"></i></a></li>
+            <li class="list-inline-item"><a href="https://www.fiverr.com/share/qb8D02"><i class="fa fa-google-plus"></i></a></li>
+            <li class="list-inline-item"><a href="https://www.fiverr.com/share/qb8D02" target="_blank"><i class="fa fa-envelope"></i></a></li>
+          </ul>
+        </div>
+        <hr>
+      </div>  
+      <div class="row">
+        <div class="col-xs-12 col-sm-12 col-md-12 mt-2 mt-sm-2 text-center text-white">
+          <p><u><a href="https://www.nationaltransaction.com/">National Transaction Corporation</a></u> is a Registered MSP/ISO of Elavon, Inc. Georgia [a wholly owned subsidiary of U.S. Bancorp, Minneapolis, MN]</p>
+          <p class="h6">© All right Reversed.<a class="text-green ml-2" href="https://www.sunlimetech.com" target="_blank">Sunlimetech</a></p>
+        </div>
+        <hr>
+      </div>  
+    </div>
+  </section>
+  <!-- ./Footer -->
+        <!--service-->
+        <!--service-->
+    <!--container-->
+
+      <!--my fonts-->
+      <link href="https://fonts.googleapis.com/css?family=Armata&display=swap" rel="stylesheet"> 
+      <!--my fonts-->  
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="main.js">      
+    </script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </body>
+</html>
